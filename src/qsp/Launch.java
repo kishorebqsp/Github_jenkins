@@ -9,6 +9,7 @@ public class Launch {
 	@Test
 	public void test1() throws InterruptedException
 	{
+		System.out.println("1");
 		System.setProperty("webdriver.gecko.driver","./drivers/geckodriver.exe");
 		
 		WebDriver driver =new FirefoxDriver();
@@ -19,6 +20,8 @@ public class Launch {
 		Thread.sleep(5000);
 		
 		driver.quit();
+		
+		System.out.println("2");
 	}
 
 }
