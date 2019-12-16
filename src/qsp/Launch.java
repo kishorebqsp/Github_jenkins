@@ -14,6 +14,8 @@ public class Launch {
 		WebDriver driver =new FirefoxDriver();
 		
 		driver.get("https://www.google.com");
+		
+		driver.manage().window().maximize();
 		Thread.sleep(5000);
 		
 		driver.quit();
